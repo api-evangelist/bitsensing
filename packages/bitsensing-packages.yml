@@ -1,0 +1,25 @@
+generated: '2026-09-28'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/bitsensing
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (bitsensing.com,
+  security/bitsensing-domain-security.yml) or its accepted GitHub org (bitsensing).'
+packages:
+- name: afi920-sdk
+  registry: github
+  url: https://github.com/bitsensing/afi920-sdk
+  language: C++
+  official: true
+  version: null
+  published: '2026-07-01'
+  source_repo: https://github.com/bitsensing/afi920-sdk
+  evidence: repository in github.com/bitsensing, whose profile names the provider's domain
+- name: afi921-sdk-temp
+  registry: github
+  url: https://github.com/bitsensing/afi921-sdk-temp
+  language: ''
+  official: true
+  version: null
+  published: '2026-06-30'
+  source_repo: https://github.com/bitsensing/afi921-sdk-temp
+  evidence: repository in github.com/bitsensing, whose profile names the provider's domain

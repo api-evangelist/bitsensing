@@ -1,23 +1,81 @@
 aid: bitsensing
+
 name: Bitsensing
-description: 'Bitsensing is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/66d99fc8eaaf745a42126b2e/67320207881386c295d9cf40_OG%20image.webp
+
+description: 'Bitsensing develops radar technology platforms for automotive, smart cities, healthcare and industrial AI. Their radar solutions enable autonomous vehicles, smart infrastructure, and advanced sensing applications, delivering high‑resolution, reliable detection for safety and efficiency. The company offers end‑to‑end radar innovation from concept through mass production, aiming to bring radar everywhere for a smarter, safer world.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bitsensing/refs/heads/main/apis.yml
+
+# Updated fields
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract was found at the API host; attempts to fetch https://api.bitsensing.com/openapi.json returned no response.
+  evidence:
+    - url: https://api.bitsensing.com/openapi.json
+      status: 000
+  checked: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Radar
+- Automotive
+- SmartCities
+- Healthcare
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bitsensing-hosts.yml
+- type: Vendors
+  url: vendors/bitsensing-vendors.yml
+- type: SDKs
+  url: packages/bitsensing-packages.yml
+- type: Packages
+  url: packages/bitsensing-packages.yml
+- type: Newsroom
+  url: https://www.bitsensing.com/newsroom
+- type: GitHubOrganization
+  url: https://github.com/bitsensing
+- type: DomainSecurity
+  url: security/bitsensing-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bitsensing
+  url: https://www.bitsensing.com
+- type: Documentation
+  url: https://www.bitsensing.com/technology
+- type: Blog
+  url: https://www.bitsensing.com/blog
+- type: PrivacyPolicy
+  url: https://www.bitsensing.com/legal/privacy-policy
+- type: Support
+  url: https://www.bitsensing.com/contact-us
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

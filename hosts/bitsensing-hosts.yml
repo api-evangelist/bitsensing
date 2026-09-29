@@ -1,0 +1,51 @@
+generated: '2026-09-28'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 2
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - source
+  - website
+hosts:
+- host: api.bitsensing.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: bitsensing.com
+  role: api
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: www.bitsensing.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Newsroom
+  - Website
+  - Documentation
+  - Blog
+  - PrivacyPolicy
+  - Support
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: bitsensing.com
+  role: website
+  relation: own
